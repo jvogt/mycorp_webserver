@@ -11,5 +11,5 @@ service 'httpd' do
 end
 
 file '/var/www/html/index.html' do
-  content 'Hello World'
+  content "Hello World from #{node.policy_group}"
 end

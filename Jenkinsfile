@@ -4,6 +4,7 @@ pipeline {
         stage('test') {
             steps {
                 dir("${env.WORKSPACE}"){
+                  bat 'chef env --chef-license accept'
                   bat 'cookstyle'
                   bat 'kitchen test --destroy always'
                 }

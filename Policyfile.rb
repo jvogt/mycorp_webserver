@@ -19,5 +19,5 @@ default['audit']['reporter'] = 'chef-server-automate'
 default['audit']['fetcher'] = 'chef-server'
 
 default['audit']['profiles']['mycorp_webserver'] = {
-  'compliance': 'admin/mycorp_webserver'
+  'compliance': 'admin/mycorp_webserver',
 }

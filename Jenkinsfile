@@ -22,7 +22,7 @@ pipeline {
             steps {
                 dir("${env.WORKSPACE}"){
                   bat 'chef push staging Policyfile.rb'
-                  bat 'knife ssh "policy_name:mycorp_webserver AND policy_group:staging" "sudo chef-client" -x Administrator -P "Fundamentals1"'
+                  bat 'knife ssh "policy_name:mycorp_webserver AND policy_group:staging" "sudo chef-client" -x chef -P "Fundamentals1"'
                 }
             }
         }
@@ -30,7 +30,7 @@ pipeline {
             steps {
                 dir("${env.WORKSPACE}"){
                   bat 'chef push production Policyfile.rb'
-                  bat 'knife ssh "policy_name:mycorp_webserver AND policy_group:production" "sudo chef-client" -x Administrator -P "Fundamentals1"'
+                  bat 'knife ssh "policy_name:mycorp_webserver AND policy_group:production" "sudo chef-client" -x chef -P "Fundamentals1"'
                 }
             }
         }

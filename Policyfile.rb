@@ -21,3 +21,7 @@ default['audit']['fetcher'] = 'chef-server'
 default['audit']['profiles']['mycorp_webserver'] = {
   'compliance': 'admin/mycorp_webserver',
 }
+
+default['audit']['profiles']['cis-amazonlinux2-level1'] = {
+  'compliance': 'admin/cis-amazonlinux2-level1',
+}

@@ -7,9 +7,9 @@
 package 'httpd'
 
 service 'httpd' do
-    action [:enable, :start]
+  action [:enable, :start]
 end
 
 file '/var/www/html/index.html' do
-    content 'Hello World'
+  content 'Hello World'
 end

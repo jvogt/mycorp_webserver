@@ -1,6 +1,6 @@
 name 'mycorp_webserver'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'Jeff Vogt'
+maintainer_email 'notjvogt@chef.io'
 license 'All Rights Reserved'
 description 'Installs/Configures mycorp_webserver'
 version '0.1.0'
